@@ -55,12 +55,26 @@ Luna fonctionne parfaitement en mode texte si ces dépendances ne sont pas dispo
 
 | Commande | Description |
 |----------|-------------|
-| `/aide` | Affiche l'aide |
+| `/aide` | Affiche l'aide complète |
 | `/note <texte>` | Sauvegarde une note longue durée |
 | `/notes` | Affiche vos notes |
 | `/effacer` | Efface l'historique de cette session |
 | `/utilisateurs` | Liste les comptes (propriétaire seulement) |
 | `/quitter` | Quitter Luna |
+
+### Contrôle iOS
+
+| Commande | Description |
+|----------|-------------|
+| `/ios <id>` | Déclenche un raccourci sur votre iPhone |
+| `/ios <uid> <id>` | Contrôle l'iPhone d'un membre (propriétaire) |
+| `/appareils` | Liste les iPhones enregistrés + statut |
+| `/raccourcis` | Affiche tous les raccourcis disponibles |
+| `/position [uid]` | Dernière position GPS reçue |
+
+**Raccourcis intégrés :** `dnd_on`, `dnd_off`, `volume_up`, `volume_down`, `play_music`, `alarm_morning`, `send_location`, `take_photo`, `low_power`, `wifi_on`, `wifi_off`, `lock_daughter`
+
+Voir **`shortcuts_ios/README_RACCOURCIS.md`** pour la procédure d'installation iOS.
 
 ## Confidentialité
 

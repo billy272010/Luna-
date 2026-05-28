@@ -1,0 +1,108 @@
+{
+  "server_port": 7777,
+  "ntfy_topic": "",
+  "ntfy_server": "https://ntfy.sh",
+  "devices": {
+    "owner": {
+      "name": "iPhone Propriétaire",
+      "ip": null,
+      "udid": null
+    },
+    "wife": {
+      "name": "iPhone Épouse",
+      "ip": null,
+      "udid": null
+    },
+    "daughter": {
+      "name": "iPhone Fille",
+      "ip": null,
+      "udid": null
+    }
+  },
+  "shortcuts": [
+    {
+      "id": "dnd_on",
+      "shortcut_name": "Luna DND ON",
+      "description": "Active le mode Ne Pas Déranger",
+      "category": "phone",
+      "owner_only": false
+    },
+    {
+      "id": "dnd_off",
+      "shortcut_name": "Luna DND OFF",
+      "description": "Désactive le mode Ne Pas Déranger",
+      "category": "phone",
+      "owner_only": false
+    },
+    {
+      "id": "volume_up",
+      "shortcut_name": "Luna Volume+",
+      "description": "Augmente le volume",
+      "category": "media",
+      "owner_only": false
+    },
+    {
+      "id": "volume_down",
+      "shortcut_name": "Luna Volume-",
+      "description": "Baisse le volume",
+      "category": "media",
+      "owner_only": false
+    },
+    {
+      "id": "play_music",
+      "shortcut_name": "Luna Musique",
+      "description": "Lance Apple Music",
+      "category": "media",
+      "owner_only": false
+    },
+    {
+      "id": "alarm_morning",
+      "shortcut_name": "Luna Réveil",
+      "description": "Programme un réveil",
+      "category": "alarm",
+      "owner_only": false
+    },
+    {
+      "id": "send_location",
+      "shortcut_name": "Luna Position",
+      "description": "Envoie la position GPS à Luna",
+      "category": "location",
+      "owner_only": false
+    },
+    {
+      "id": "take_photo",
+      "shortcut_name": "Luna Photo",
+      "description": "Prend une photo",
+      "category": "camera",
+      "owner_only": false
+    },
+    {
+      "id": "low_power",
+      "shortcut_name": "Luna Éco",
+      "description": "Active le mode économie d'énergie",
+      "category": "phone",
+      "owner_only": false
+    },
+    {
+      "id": "lock_daughter",
+      "shortcut_name": "Luna Verrouiller",
+      "description": "Verrouille l'écran de la fille",
+      "category": "parental",
+      "owner_only": true
+    },
+    {
+      "id": "wifi_on",
+      "shortcut_name": "Luna WiFi ON",
+      "description": "Active le WiFi",
+      "category": "connectivity",
+      "owner_only": false
+    },
+    {
+      "id": "wifi_off",
+      "shortcut_name": "Luna WiFi OFF",
+      "description": "Désactive le WiFi",
+      "category": "connectivity",
+      "owner_only": true
+    }
+  ]
+}

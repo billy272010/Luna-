@@ -141,6 +141,29 @@ def input_loop(luna: Luna, voice_mode: bool) -> None:
             break
 
 
+def _start_ios_server() -> None:
+    """Démarre le serveur HTTP en arrière-plan pour les iPhones."""
+    try:
+        from core.server import LunaServer
+        from config_loader import get_ios_port
+        port = get_ios_port()
+        server = LunaServer(port=port)
+        server.start()
+        import socket
+        try:
+            with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
+                s.connect(("8.8.8.8", 80))
+                local_ip = s.getsockname()[0]
+        except Exception:
+            local_ip = "127.0.0.1"
+        console.print(
+            f"[dim]📱 Serveur iOS actif — "
+            f"Les iPhones peuvent joindre Luna sur [cyan]{local_ip}:{port}[/cyan][/dim]"
+        )
+    except Exception as e:
+        console.print(f"[dim]Serveur iOS désactivé : {e}[/dim]")
+
+
 def main():
     # Vérifie la configuration
     if not is_setup_done():
@@ -156,6 +179,9 @@ def main():
         sys.exit(1)
 
     print_banner()
+
+    # Démarrage du serveur iOS (arrière-plan)
+    _start_ios_server()
 
     # Vérifie le mode vocal
     voice_mode = voice.is_voice_available()
