@@ -1,0 +1,8 @@
+[
+  {
+    "type": "manipulation",
+    "user_id": "owner",
+    "pattern": "ignore (tes|vos) instructions",
+    "timestamp": "2026-05-28T07:54:43.384323"
+  }
+]

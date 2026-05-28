@@ -3,10 +3,19 @@ rich>=13.0.0
 python-dotenv>=1.0.0
 colorama>=0.4.6
 
-# Optionnel — voix
-pyttsx3>=2.90
-SpeechRecognition>=3.10.0
-pyaudio>=0.2.13
+# ── Voix neurale (recommandé, gratuit) ──────────────────────────────────────
+edge-tts>=6.1.9
 
-# Optionnel — contrôle iPhone USB/WiFi
-pymobiledevice3>=4.0.0
+# ── Voix premium (optionnel, nécessite ELEVENLABS_API_KEY dans .env) ────────
+# elevenlabs>=1.0.0
+
+# ── Reconnaissance vocale (optionnel) ───────────────────────────────────────
+SpeechRecognition>=3.10.0
+# pyaudio>=0.2.13       # nécessite portaudio — voir README
+
+# ── Contrôle iPhone USB (optionnel) ─────────────────────────────────────────
+# pymobiledevice3>=4.0.0
+
+# ── Lecture audio Linux (choisir un parmi) ──────────────────────────────────
+# mpg123 — via apt/brew (mpg123 -q fichier.mp3)
+# ffmpeg  — via apt/brew (ffplay)
